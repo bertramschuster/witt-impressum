@@ -1,0 +1,95 @@
+:root {
+    --background-color: black;
+    --primary-color: white;
+    --default-font-size: 1.5rem;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h1, h2 {
+    font-style: bold;
+    color:var(--primary-color);
+    margin: 2rem 0 1rem;
+}
+
+p {
+    font-size: var(--default-font-size);
+    color:var(--primary-color);
+    margin: 7px;
+    line-height: calc(var(--default-font-size) + .5rem);
+    text-align: center;
+    min-width: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    background-color: var(--background-color);
+    overflow: hidden;
+    height: 3.5rem;
+    margin: 1rem 0 2rem;
+    border-radius: 25px;
+    box-sizing: border-box;
+    position: fixed;
+    border: 3px solid var(--primary-color);
+    top: 0;
+}
+
+.nav__icon {
+    height: 100%;
+    filter: brightness(0) invert(1);
+}
+
+.nav__elem {
+    border-radius: 50%;
+    padding: .5rem;
+    aspect-ratio: 1/1;
+    padding: .5rem;
+}
+
+.nav__elem.active{
+    background: var(--primary-color);
+}
+
+.nav__elem.active .nav__icon {
+    filter: brightness(1) invert(0);
+}
+
+.about-me__img {
+    width: min(100%, 100vw);
+}
+
+@media (max-width: 450px) {
+    :root {
+        --default-font-size: 2rem;
+    }
+
+    nav {
+        height: 5rem;
+    }
+
+    body {
+        margin-top: 5rem;
+    }
+}
