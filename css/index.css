@@ -47,25 +47,29 @@ nav {
     justify-self: center;
     background-color: var(--background-color);
     overflow: hidden;
+    box-sizing: border-box;
     height: 3.5rem;
     margin: 1rem 0 2rem;
     border-radius: 25px;
-    box-sizing: border-box;
     position: fixed;
     border: 3px solid var(--primary-color);
     top: 0;
-}
-
-.nav__icon {
-    height: 100%;
-    filter: brightness(0) invert(1);
+    width:fit-content;
 }
 
 .nav__elem {
     border-radius: 50%;
-    padding: .5rem;
     aspect-ratio: 1/1;
-    padding: .5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__icon {
+    height: 70%;
+    aspect-ratio: 1/1;
+    filter: brightness(0) invert(1);
 }
 
 .nav__elem.active{
