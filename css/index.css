@@ -84,6 +84,12 @@ nav {
     width: 75%;
 }
 
+.impressum__info a {
+    color: white;
+    font-size: var(--default-font-size);
+    display: block;
+}
+
 @media (max-width: 450px) {
     :root {
         --default-font-size: 2rem;
