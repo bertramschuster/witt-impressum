@@ -32,6 +32,7 @@ h1, h2 {
     margin: 2rem 0 1rem;
 }
 
+.impressum__info a,
 p {
     font-size: var(--default-font-size);
     color:var(--primary-color);
@@ -39,6 +40,8 @@ p {
     line-height: calc(var(--default-font-size) + .5rem);
     text-align: center;
     min-width: 0;
+    /* links are inline by default*/
+    display: block;
 }
 
 nav {
@@ -82,12 +85,6 @@ nav {
 
 .about-me__img {
     width: 75%;
-}
-
-.impressum__info a {
-    color: white;
-    font-size: var(--default-font-size);
-    display: block;
 }
 
 @media (max-width: 450px) {
